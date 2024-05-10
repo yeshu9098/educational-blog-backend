@@ -1,0 +1,9 @@
+node_modules/
+
+data.txt
+
+key.js
+
+.env
+
+package-lock.json
