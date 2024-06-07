@@ -50,7 +50,7 @@ async function login(req){
                // resolve( "login successfull")
                let data = {
                    id : doc._id,
-                   name: doc.name,
+                   username: doc.username,
                }             
                const token = jwt.sign(data, secretKey);
                resolve(token);

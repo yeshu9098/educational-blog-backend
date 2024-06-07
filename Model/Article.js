@@ -7,7 +7,7 @@ const article = new mongoose.Schema({
     category: { 
         type: String, 
         required: true, 
-        enum: ['Technology', 'Health', 'Finance', 'Education', 'Entertainment']
+        enum: ['Articles', 'Current Affairs', 'Jobs', 'HP GK', 'Syllabus', 'HAS Mains']
     },
     date: { type: Date, required: false }
 });
