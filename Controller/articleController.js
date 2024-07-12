@@ -93,9 +93,26 @@ function deleteArticle(req) {
   });
 }
 
+// Fetch articles by category
+function getArticlesByCategory(req) {
+  return new Promise((resolve, reject) => {
+    const { category } = req.params;
+
+    Article.find({ category })
+      .then((articles) => {
+        resolve(articles);
+      })
+      .catch((error) => {
+        reject(error);
+      });
+  });
+}
+
+
 module.exports = {
   createarticle,
   listArticles,
   updateArticle,
   deleteArticle,
+  getArticlesByCategory
 };

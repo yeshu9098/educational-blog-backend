@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 
 const quiz = new mongoose.Schema({
   question: { type: String, required: true },
-  user: { type: String, required: true },
   options: [{ type: String, required: true }],
   correctOptionIndex: { type: Number, required: true }
 });
